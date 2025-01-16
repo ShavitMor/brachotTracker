@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Main container styling */
+div {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 600px;
+  margin: 20px auto;
+}
+
+/* Title styling */
+h1 {
+  font-size: 2.5rem;
+  color: #3b5998;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Blessing text styling */
+p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  margin: 10px 0;
+}
+
+p:first-of-type {
+  font-style: italic;
+  color: #6a89cc;
+}
+
+/* Button styling */
+button {
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #4caf50, #81c784);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #388e3c, #66bb6a);
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background: #dcdcdc;
+  color: #a9a9a9;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  div {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+}

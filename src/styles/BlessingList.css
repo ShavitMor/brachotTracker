@@ -1,0 +1,101 @@
+/* General page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container styling */
+div {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 500px;
+  margin: 20px auto;
+}
+
+/* Title styling */
+h1 {
+  font-size: 2rem;
+  color: #3b5998;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li a {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #6a89cc;
+  text-decoration: none;
+  background: linear-gradient(to right, #ffdd99, #ffbb33);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+li a:hover {
+  background: linear-gradient(to right, #ffbb33, #ffdd99);
+  transform: scale(1.1);
+}
+
+li a:active {
+  transform: scale(1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styling */
+button {
+  font-size: 1.2rem;
+  color: #4a2c17;
+  background: linear-gradient(to right, #9ad3bc, #4caf50);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #4caf50, #9ad3bc);
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  div {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  li a, button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
